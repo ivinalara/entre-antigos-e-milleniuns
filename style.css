@@ -1,0 +1,437 @@
+/* Redefinição de estilo - GERAL */
+
+* {
+  background: none;
+}
+
+body {
+  margin: 0px;
+  font-family: "Cormorant Garamond", serif, Arial;
+  color: #1f1f1f;
+  margin: 50px;
+  background: #d3c095;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Redefinição de estilo - TIPOGRAFIA*/
+h1, h2, h3, h4, h5, h6, p, a {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+/*----------------------- Geral das paginas -----------------------*/
+/*  Definição de estilos e classes globais */
+
+body {
+  background-image: url("./img/Imagem-bg.png");
+}
+
+.container-global {
+  /*NOTA: Não precisa mexer ou fazer responsividade 
+  pq acredito que telas menores que isso não serão utilizadas
+  (também da pra perguntar pro Edgar se é necessári!!!)*/
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px 60px 50px 60px;
+}
+
+.font1 {
+  font-family: "Nunito", sans-serif;
+}
+
+.imagem {
+  width: 20%;
+  height: 20%;
+  margin-right: 20px;
+}
+
+.img-position {
+  position: relative;
+}
+
+#img4{
+  position: absolute;
+  width: 45%;
+  top: 500px;
+  right: 3%;
+  z-index: -1;
+}
+
+#back-button {
+  text-decoration: underline;
+  width: 110px;
+  margin: 10px;
+  display: inline-block;
+}
+
+/*----------------------- Home / Tela inicial -----------------------*/
+/*Style 1º section / trecho da pagina D1*/
+
+#d1-logo {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3rem;
+}
+
+#d1-logo img {
+  width: 9%;
+}
+
+#d1-logo h2 {
+  font-weight: 700;
+}
+
+.logo-txt1 {
+  font-weight: 400;
+}
+.logo-txt2 {
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+/*----------------------- Home / Tela inicial -----------------------*/
+/*Style 2º section / trecho da pagina D2 */
+
+#d2-list-buttons {
+  display: flex;
+  width: auto;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 1.25rem;
+  flex-shrink: 0;
+  margin-bottom: 3rem;
+}
+
+#d2-list-buttons a {
+  display: flex;
+  align-items: center;
+  flex: 1 1 0;
+  align-self: stretch;
+
+  padding: 2rem 2rem;
+  border: 2px solid #111;
+  background: #d3c09595;
+}
+
+#d2-list-buttons a:hover {
+  background: #c2a97685;
+}
+#d2-list-buttons img {
+  height: auto;
+  max-width: 15%;
+}
+
+.button-txt1 {
+  font-size: 1.4rem;
+}
+
+.button-txt2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+/*----------------------- Home / Tela inicial -----------------------*/
+/*Style 3º section / trecho da pagina D3*/
+
+.d3-img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  padding: 5px;
+}
+
+.d3-accordion {
+  max-width: 700px;
+}
+
+.d3-item {
+  padding: 0 0px;
+}
+
+.accordion {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.d3-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: #c2a976; /*Color drop down parte de cima*/
+  border: 2px solid #111;
+  padding: 8px 20px 8px 8px;
+}
+
+.d3-heading:hover {
+  background: #AA8D5299;
+}
+
+.heading-container {
+  display: flex;
+  align-items: center;
+}
+
+.d3-content {
+  background: #d3c09590; /*Color drop down parte de cima*/
+  padding: 15px 20px;
+  border: 2px solid #111;
+  border-top: 0;
+  display: none;
+  animation: animate 0.1s linear backwards;
+  line-height: 2;
+  transform-origin: top;
+}
+
+.active .d3-heading i {
+  transform: rotate(180deg);
+}
+
+.active .d3-content {
+  display: block;
+}
+
+/*  Animação */
+@keyframes animate {
+  0% {
+    transform: scaleY(0);
+  }
+}
+
+/*  RESPONSIVIDADE */
+@media (max-width: 800px) {
+  #d2-list-buttons {
+    display: inline;
+  }
+}
+
+@media (max-width: 1100px) {
+  .img-position img {
+    display: none;
+  }
+}
+
+
+/*--------------- Template activities / Telas de atividade -------------*/
+/*Style 1º section / trecho da pagina D1*/
+
+.header {
+  /*apenas paras a paginas de atividade*/
+  display: flex;
+  padding-bottom: 5rem;
+  justify-content: space-between;
+
+  font-size: 1.2rem;
+}
+
+img#logo-atv {
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.logo-title-container {
+  display: flex;
+}
+
+.logo-title-container .atv-title {
+  padding: 20px;
+}
+
+.logo-img-container {
+  display: flex;
+  width: 70px;
+  height: 100px;
+}
+
+.logo-container {
+  display: flex;
+  padding-right: 38px;
+  border-right: solid 2px #000;
+}
+.logo-txt-container {
+  display: inline-flex;
+}
+span.logo-txt1-atv {
+  font-size: 1rem;
+}
+
+.listday {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.linkday {
+  display: inline-flex;
+  background: #ceba91;
+  border: solid 2px #111;
+  padding: 10px 20px;
+  width: max-content;
+}
+
+.listday a:hover {
+  background: #c8b181;
+}
+
+a.active-day {
+  background: #c2a976;
+}
+
+/*--------------- Template activities / Telas de atividade -------------*/
+/*Style 2º section / trecho da pagina D2*/
+.title-codel-division{
+  padding: 12px;
+  border-bottom: solid 2px #000;
+  margin-bottom: 28px;
+
+}
+.d2-container-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex-shrink: 0;
+  margin-bottom: 5rem;
+
+  position: relative;
+}
+
+#pergamun-lef { /*imagens do pergaminho*/
+  position: absolute;
+  left: 20px;
+  top: -5px;
+}
+
+#pergamun-right { /*imagens do pergaminho*/
+  position: absolute;
+  transform: rotate(180deg);
+  right: 20px;
+  top: -5px;
+}
+
+.d2-box {
+  display: flex;
+  height: 124px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  align-self: stretch;
+  margin: 0px 2rem;
+
+  border: 2px solid #8a7854;
+}
+
+.box-title {
+  display: flex;
+  width: 380px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+
+  border-right: 2px solid #8a7854;
+  font-size: 1.6rem;
+  font-weight: 1000;
+}
+
+.d2-box span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+  align-self: stretch;
+
+  font-size: 1.5rem;
+}
+
+div.portuguese-box {
+  cursor: pointer;
+}
+
+.font2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.grego-box {
+  margin-bottom: 4rem;
+  border: none;
+}
+
+div.grego-box {
+  background: url("./img/pergamun-bg.png");
+}
+
+.portuguese-box {
+  background: #d3c09599;
+}
+
+.portuguese-box:hover {
+  background: #c2a97680;
+}
+
+.bluetxt {
+  color: #004aad;
+}
+
+.redtxt {
+  color: #ff3131;
+}
+
+span.box-label {
+  display: none;
+}
+
+.hideshow.activehide span.box-translation {
+  display: none;
+}
+
+.hideshow.activehide span.box-label {
+  display: flex;
+  color: #8a785480;
+  font-size: 1.2rem;
+}
+
+.showday.active-day div.d2-container-box {
+  display: none;
+}
+
+/* Images Positioning / Imagens Posicionamento */
+
+.img-absolute{
+  position: absolute;
+}
+
+.img-z-index {
+  z-index: -1;
+}
+
+.p-img1{
+  width: 25%;
+  bottom: -75px;
+  right: 0;
+}
+
+.p-img2{
+  width: 25%;
+  bottom: -75px;
+  left: 0;
+}
+.p-img3{
+  width: 25%;
+  bottom: -75px;
+  left: 37%;
+}
