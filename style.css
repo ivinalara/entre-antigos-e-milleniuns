@@ -23,7 +23,14 @@ a {
 }
 
 /* Redefinição de estilo - TIPOGRAFIA*/
-h1, h2, h3, h4, h5, h6, p, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
   margin: 0px;
 }
 
@@ -63,7 +70,7 @@ body {
   position: relative;
 }
 
-#img4{
+#img4 {
   position: absolute;
   width: 45%;
   top: 500px;
@@ -177,7 +184,7 @@ body {
 }
 
 .d3-heading:hover {
-  background: #AA8D5299;
+  background: #aa8d5299;
 }
 
 .heading-container {
@@ -223,7 +230,6 @@ body {
     display: none;
   }
 }
-
 
 /*--------------- Template activities / Telas de atividade -------------*/
 /*Style 1º section / trecho da pagina D1*/
@@ -294,12 +300,24 @@ a.active-day {
 
 /*--------------- Template activities / Telas de atividade -------------*/
 /*Style 2º section / trecho da pagina D2*/
-.title-codel-division{
-  padding: 12px;
-  border-bottom: solid 2px #000;
-  margin-bottom: 28px;
 
+.cordel-title {
+  margin-bottom: 40px;
+  border-bottom: solid 2px #11111130;
 }
+
+.verse-title {
+  margin-bottom: 50px;
+  margin-top: 170px;
+  border-bottom: solid 2px #11111130;
+}
+
+.cordel-txt p {
+  font-size: 1.5rem;
+  line-height: 160%;
+  padding-bottom: 80px;
+}
+
 .d2-container-box {
   display: flex;
   flex-direction: column;
@@ -311,13 +329,15 @@ a.active-day {
   position: relative;
 }
 
-#pergamun-lef { /*imagens do pergaminho*/
+#pergamun-lef {
+  /*imagens do pergaminho*/
   position: absolute;
   left: 20px;
   top: -5px;
 }
 
-#pergamun-right { /*imagens do pergaminho*/
+#pergamun-right {
+  /*imagens do pergaminho*/
   position: absolute;
   transform: rotate(180deg);
   right: 20px;
@@ -411,27 +431,36 @@ span.box-label {
 
 /* Images Positioning / Imagens Posicionamento */
 
-.img-absolute{
+.img-absolute img {
   position: absolute;
 }
 
-.img-z-index {
+.img-z-index img {
   z-index: -1;
 }
 
-.p-img1{
+.p-img1 {
   width: 25%;
   bottom: -75px;
   right: 0;
 }
 
-.p-img2{
+.p-img2 {
   width: 25%;
   bottom: -75px;
   left: 0;
 }
-.p-img3{
+.p-img3 {
   width: 25%;
   bottom: -75px;
   left: 37%;
+}
+
+.img-division img {
+  width: 20%;
+  bottom: -60px;
+}
+
+.img-division img.p-img3 {
+  left: 42%;
 }
