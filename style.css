@@ -325,6 +325,10 @@ a.active-day {
   justify-content: space-around;
 }
 
+.day2 p{
+  text-align: right;
+}
+
 .cordel-txt div {
   display: flex;
 }
@@ -381,6 +385,7 @@ a.active-day {
   flex-shrink: 0;
   align-self: stretch;
   margin: 0px 2rem;
+  text-align: center;
 
   border: 2px solid #8a7854;
 }
