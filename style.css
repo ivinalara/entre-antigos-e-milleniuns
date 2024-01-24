@@ -305,6 +305,12 @@ a.active-day {
   margin-bottom: 40px;
   border-bottom: solid 2px #11111130;
 }
+.img-cordel img{
+  object-fit: contain;
+}
+.img-cordel {
+  max-height: 500px;
+}
 
 .verse-title {
   margin-bottom: 50px;
@@ -312,10 +318,34 @@ a.active-day {
   border-bottom: solid 2px #11111130;
 }
 
+.verse-title.verse-one {
+  margin-top: 0px;
+}
+.cordel-txt {
+  justify-content: space-around;
+}
+
+.cordel-txt div {
+  display: flex;
+}
+
 .cordel-txt p {
+  display: flex;
   font-size: 1.5rem;
-  line-height: 160%;
-  padding-bottom: 80px;
+  line-height: 170%;
+  padding: 40px;
+  background: #c8b181;
+  border: solid 2px #000;
+}
+
+.d2-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+  margin-bottom: 4rem;
+
+  position: relative;
 }
 
 .d2-container-box {
@@ -404,11 +434,11 @@ div.grego-box {
 }
 
 .bluetxt {
-  color: #004aad;
+  color: #0045a1;
 }
 
 .redtxt {
-  color: #ff3131;
+  color: #ad0000;
 }
 
 span.box-label {
