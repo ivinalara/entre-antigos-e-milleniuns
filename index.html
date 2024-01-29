@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./estilo/style.css" />
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body class="container-global">
+
+  <div class="img-position"><img id="img4" src="./img/Imagem4.png" alt=""></div>
+
+  <div id="d1-logo">
+    <img src="./img/Imagem1.png" alt="" class="imagem">
+    <h2><span class="font1 logo-txt1">Entre</span><span class="logo-txt2"><br> Antigos e<br> Mileniuns</span></h2><br>
+  </div>
+
+
+
+  <div id="d2-list-buttons">
+    <a class="button-txt1" href="./grego-td/pag-grego-todo-dia1.html">
+      <img src="./img/Imagem6.png" alt="" class="imagem">
+      <p>Um pouco de grego<br><span class="button-txt2">todo dia</span></p>
+    </a>
+
+    <a class="button-txt1" href="./grego-cordel/pag-cordel-dia1.html">
+      <img src="./img/Imagem8.png" alt="" class="imagem">
+      <p>Grego<br><span class="button-txt2">em Cordel</span></p>
+    </a>
+  </div>
+
+
+
+  <div class="d3-accordion font1">
+
+    <div class="d3-item">
+      <div class="accordion active">
+        <div class="d3-heading">
+          <div class="heading-container">
+            <img src="./img/Imagem2.png" alt="" class="imagem d3-img">
+            <h3>Sobre</h3>
+          </div>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <p class="d3-content">
+          Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
+        </p>
+      </div>
+    </div>
+
+    <div class="d3-item">
+      <div class="accordion">
+        <div class="d3-heading">
+          <div class="heading-container">
+            <img src="./img/Imagem3.png" alt="" class="imagem d3-img">
+            <h3>Registros</h3>
+          </div>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <p class="d3-content">
+          Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
+        </p>
+      </div>
+    </div>
+
+    <div class="d3-item">
+      <div class="accordion">
+        <div class="d3-heading">
+          <div class="heading-container">
+            <img src="./img/Imagem5.png" alt="" class="imagem d3-img">
+            <h3>Contatos</h3>
+          </div>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <p class="d3-content">
+          Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script>
+    const accordions = document.querySelectorAll(".d3-item .accordion");
+
+    accordions.forEach(accordion => {
+      accordion.addEventListener('click', event => {
+        accordion.classList.toggle("active");
+      });
+    });
+
+  </script>
+</body>
+
+</html>

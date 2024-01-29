@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../estilo/style.css" />
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body class="container-global">
+  <div class="d1-menu-nav">
+    <a href="../index.html" id="back-button" class="font1">
+      < Pagina inicial <br><br>
+    </a>
+  </div>
+
+  <div class="header atv">
+    <div class="logo-title-container">
+      <div class="logo-container">
+        <div class="logo-img-container">
+          <img id="logo-atv" src="../img/Imagem1.png" alt="">
+        </div>
+        <div class="logo-txt-container">
+          <h2><span class="font1 logo-txt1-atv">Entre</span><span><br> Antigos e<br> Mileniuns</span></h2><br>
+        </div>
+      </div>
+      <h2 class="atv-title"><span> Um pouco <br> de grego todo dia</span></h2>
+    </div>
+
+    <div class="listday">
+      <a href="./pag-grego-todo-dia1.html" class="linkday active-day">Dia 1</a>
+      <a href="./pag-grego-todo-dia2.html" class="linkday">Dia 2</a>
+      <a href="./pag-grego-todo-dia3.html" class="linkday">Dia 3</a>
+      <a href="./pag-grego-todo-dia4.html" class="linkday">Dia 4</a>
+      <a href="./pag-grego-todo-dia5.html" class="linkday">Dia 5</a>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="font1 d2-container-box inicio">
+    <img id="pergamun-lef" src="../img/pergamun-el-img.png" alt="">
+    <img id="pergamun-right" src="../img/pergamun-el-img.png" alt="">
+    <div class="d2-box grego-box">
+      <p class="box-title">Grego</p>
+      
+      <span class="font1 box-translation"><!--MUDE AQUI-->Ὁ δὲ δίκαιος ἐκ πίστεως ζήσεται</span>
+    </div>
+    <div class="d2-box portuguese-box bluetxt hideshow activehide">
+      <p class="box-title">Cearencês</p>
+
+      <span class="font2 box-translation"><!--MUDE AQUI-->O cabra-bom vive do que crê</span>
+      <span class="box-label">(Clique para mostrar a tradução)</span>
+    </div>
+    <div class="d2-box portuguese-box redtxt hideshow activehide">
+      <p class="box-title">Português padrão</p>
+      
+      <span class="font2 box-translation"><!--MUDE AQUI-->O justo viverá pela fé</span>
+      <span class="box-label">(Clique para mostrar a tradução)</span>
+    </div>
+  </div>
+
+  <div class="img-position img-z-index img-absolute">
+    <img class="p-img1" src="../img/el-imgs1.png" alt="">
+    <img class="p-img2" src="../img/el-imgs2.png" alt="">
+    <img class="p-img3" src="../img/el-imgs3.png" alt="">
+  </div>
+
+  <script>
+    const hideShowEls = document.querySelectorAll('.hideshow');
+
+    hideShowEls.forEach(hideShowEl => {
+      hideShowEl.addEventListener('click', event => {
+        hideShowEl.classList.toggle('activehide');
+      });
+    });
+
+  </script>
+</body>
+
+</html>
