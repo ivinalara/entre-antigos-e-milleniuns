@@ -5,7 +5,6 @@
 }
 
 body {
-  margin: 0px;
   font-family: "Cormorant Garamond", serif, Arial;
   color: #1f1f1f;
   margin: 50px;
@@ -48,9 +47,6 @@ body {
 }
 
 .container-global {
-  /*NOTA: Não precisa mexer ou fazer responsividade 
-  pq acredito que telas menores que isso não serão utilizadas
-  (também da pra perguntar pro Edgar se é necessári!!!)*/
   max-width: 1300px;
   margin: 0 auto;
   padding: 40px 60px 50px 60px;
@@ -218,18 +214,6 @@ body {
   }
 }
 
-/*  RESPONSIVIDADE */
-@media (max-width: 800px) {
-  #d2-list-buttons {
-    display: inline;
-  }
-}
-
-@media (max-width: 1100px) {
-  .img-position img {
-    display: none;
-  }
-}
 
 /*--------------- Template activities / Telas de atividade -------------*/
 /*Style 1º section / trecho da pagina D1*/
@@ -279,7 +263,8 @@ span.logo-txt1-atv {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  font-weight: 700;
+  flex-wrap: wrap;
+  padding: 20px 0px;
 }
 
 .linkday {
@@ -287,7 +272,9 @@ span.logo-txt1-atv {
   background: #ceba91;
   border: solid 2px #111;
   padding: 10px 20px;
-  width: max-content;
+  min-width: max-content;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
 }
 
 .listday a:hover {
@@ -417,7 +404,6 @@ div.portuguese-box {
 }
 
 .font2 {
-  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -427,7 +413,7 @@ div.portuguese-box {
 }
 
 div.grego-box {
-  background: url("../img/pergamun-bg.png");
+  background: center / cover url("../img/pergamun-bg.png");
 }
 
 .portuguese-box {
@@ -498,4 +484,108 @@ span.box-label {
 
 .img-division img.p-img3 {
   left: 42%;
+}
+
+
+/*  RESPONSIVIDADE */
+@media (max-width: 800px) {
+  /*global*/
+  .container-global {
+    padding: 30px 12px 20px 12px;
+  }
+
+  /*pagina inicial*/
+  #d2-list-buttons {
+    display: inline;
+  }
+  .button-txt1 {
+    font-size: 1.3rem;
+  }
+  .button-txt2 {
+    font-size:1.8rem;
+  }
+  a.button-txt1{
+    margin-bottom: 20px;
+  }
+
+  /*header*/
+  #d1-logo img {
+    width: 20%;
+  }
+  .logo-txt2 {
+    font-size: 2rem;
+  }
+  .header {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 4rem;
+    justify-content: space-between;
+  
+    font-size: 1.2rem;
+  }
+  .logo-title-container span:not(.font1){
+    font-size: 1.5rem;
+  }
+  .linkday {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  /*caixas das atividades*/
+  .cordel-title {
+    font-size: 1.7rem;
+}
+  .d2-container {
+    display: flex;
+    gap: 0px;
+    flex-shrink: 1;
+    margin-bottom: 4rem;
+  }
+  .cordel-txt {
+    justify-content: flex-start;
+  }
+  .d2-container p{
+    font-size: 1.2rem ;
+  }
+  #pergamun-lef {
+    display: none;
+  }
+  #pergamun-right {
+    display: none;
+  }
+  .d2-box {
+    flex-direction: column;
+    margin: 0px;
+    height: auto;
+    border-left: 2px solid #8a7854;
+    border-right: 2px solid #8a7854;
+  }
+  .d2-box span{
+    font-size:1.1rem;
+  }
+  .box-label, .box-translation {
+    padding: 24px 4px;
+    align-self: stretch;
+  }
+  p.box-title {
+    width: auto;
+    font-size:1.2rem;
+    border-right: 0px;
+    border-bottom:2px solid #8a7854;
+  }
+  .verse-title {
+    margin-top: 00px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .img-position img {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .d2-container img{
+    display: none;
+  }
 }
