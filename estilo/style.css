@@ -491,7 +491,7 @@ span.box-label {
 @media (max-width: 800px) {
   /*global*/
   .container-global {
-    padding: 30px 12px 20px 12px;
+    padding: 24px 12px 20px 12px;
   }
 
   /*pagina inicial*/
@@ -509,6 +509,13 @@ span.box-label {
   }
 
   /*header*/
+  #back-button {
+    text-decoration: none;
+    margin: 5px;
+  }
+  #back-button:hover {
+    background:#8a785440;
+  }
   #d1-logo img {
     width: 20%;
   }
@@ -527,7 +534,7 @@ span.box-label {
     font-size: 1.5rem;
   }
   .linkday {
-    padding: 10px 12px;
+    padding: 12px 15px;
     font-size: 0.9rem;
   }
 
@@ -541,8 +548,9 @@ span.box-label {
     flex-shrink: 1;
     margin-bottom: 4rem;
   }
-  .cordel-txt {
+  .cordel-txt p {
     justify-content: flex-start;
+    padding: 40px 20px;
   }
   .d2-container p{
     font-size: 1.2rem ;
@@ -567,9 +575,14 @@ span.box-label {
     padding: 24px 4px;
     align-self: stretch;
   }
+  .hideshow.activehide span.box-label {
+    color: #00000075;
+  }
   p.box-title {
     width: auto;
     font-size:1.2rem;
+    font-weight: 800;
+    padding: 3px 0px;
     border-right: 0px;
     border-bottom:2px solid #8a7854;
   }
